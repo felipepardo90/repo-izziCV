@@ -1,0 +1,304 @@
+//Paletas de colores
+$negro: #051218;
+$gris: #5a5c6a;
+$ceniza: #468a89;
+$celeste: #55a293;
+$blanco: #f8f9f4;
+$negroTransparente: rgba(0, 0, 0, 0.7);
+
+/* Estilos en el header */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bgInicio {
+    margin: 0;
+    background: url(../multimedia/Imágenes/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hInicio {
+    font-family: 'Abril Fatface';
+    font-size: 50px;
+    border: 2px solid $negro;
+    padding: 20px;
+    text-align: center;
+    color: $negro;
+    h1 {
+        margin: 0;
+        padding: 30px;
+    }
+    h2 {
+        margin: 0;
+        padding: 30px;
+    }
+    transition: all 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        color: $blanco;
+        background: rgba(71, 79, 150, 0.5);
+    }
+}
+
+
+/* CONTACTO */
+
+.contenedor {
+    margin: 0px auto;
+    width: 100%;
+    background: url(../multimedia/Imágenes/contacto.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (2 1fr);
+    .asideRegistro {
+        padding: 20px;
+        margin: 30px auto;
+        border-radius: 3px;
+        background: $negroTransparente;
+        font-family: monospace;
+        grid-row-start: 2;
+        color: $blanco;
+        span {
+            color: $celeste;
+            font-weight: bolder;
+        }
+    }
+    .formRegistro {
+        background: $negroTransparente;
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+        padding: 5px 35px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 3px;
+        grid-row-start: 2;
+        .btnRegistro {
+            width: 100%;
+            font-family: monospace;
+            outline: none;
+            font-size: 16px;
+            background: $negro;
+            border: none;
+            color: $blanco;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: all .5s ease;
+            &:hover {
+                background-color: $ceniza;
+            }
+        }
+        .formHeader {
+            .formTitle {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                font-weight: normal;
+                font-family: monospace;
+                color: $celeste;
+                text-align: center;
+                padding: 14px 0;
+                span {
+                    color: $blanco;
+                    font-weight: bolder;
+                }
+            }
+        }
+        .formLabel {
+            display: block;
+            color: $celeste;
+            font-size: 16px;
+            font-family: monospace;
+            position: relative;
+        }
+        .formInput,
+        .formArea {
+            background: $negroTransparente;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid $gris;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: $blanco;
+            font-family: monospace;
+        }
+        .formArea {
+            resize: vertical;
+            max-height: 150px;
+            min-height: 50px;
+        }
+    }
+}
+
+
+/* FORMACIÓN */
+
+.gridContainer {
+    background-color: #124766;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat (5, 1fr);
+    .titleHeader {
+        grid-column: 1/6;
+        background-color: #124766;
+    }
+    .footer {
+        grid-column: 1/6;
+        background-color: #124766;
+    }
+    .postRelacionados {
+        background: #efca69;
+        color: black;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        &:hover {
+            cursor: pointer;
+            color: white;
+            background: black;
+        }
+    }
+    .aside {
+        grid-column: span 2;
+        background: #efca69;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &img {
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+    .contenido {
+        background: #efca69;
+        grid-column: span 3;
+        &.article {
+            background: #f8efd4;
+            padding: 20px;
+            margin-top: 5px;
+            color: black;
+            &h1 {
+                padding: 10px;
+            }
+            &p {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.gridContainer>.titleHeader,
+.gridContainer>.contenido,
+.gridContainer>.aside,
+.gridContainer>.footer,
+.gridContainer>div {
+    background: #f8efd4;
+    padding: 20px;
+}
+
+.gridContainer>.titleHeader,
+.gridContainer>.footer {
+    grid-column: 1/6;
+    background-color: #124766;
+}
+
+// .gridContainer>.contenido {
+//     background: #efca69;
+//     grid-column: span 3;
+// }
+// .contenido>.article {
+//     background: #f8efd4;
+//     padding: 20px;
+//     margin-top: 5px;
+//     color: black;
+// }
+// .contenido .article h1,
+// .contenido .article p {
+//     padding: 10px;
+// }
+
+/* RESPONSIVE Tablets */
+
+@media screen and (max-width: 768px) {
+    .titleHeader {
+        text-align: center;
+    }
+    .header {
+        text-align: center;
+        margin: 90px;
+    }
+    .gridContainer .contenido {
+        grid-column: 1/-1;
+    }
+    .gridContainer .aside {
+        grid-column: 1/6;
+    }
+    .gridContainer .postRelacionados {
+        grid-column: 1/-1;
+    }
+}
+
+
+/* FIN */
+
+.header {
+    color: black;
+    h1 {
+        margin: 10px 0px;
+        padding: 20px;
+    }
+}
+
+ul {
+    list-style: none;
+    li {
+        position: relative;
+        display: inline-block;
+        justify-content: space-around;
+        margin: 0px 50px;
+        width: 100px;
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 2px;
+        }
+    }
+}
+
+.navegacion {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+// /* Estilos de Body  */
+// body {
+//     background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+//     background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+//     background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+// }
+@import "_footer.scss"

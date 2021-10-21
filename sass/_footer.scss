@@ -1,0 +1,82 @@
+/* FOOTER */
+
+
+/* FOOTER */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background: $celeste;
+    color: $blanco;
+    height: 400px;
+    position: relative;
+    opacity: 0.7;
+    &-content {
+        height: 350px;
+        width: 90%;
+        padding: 20px;
+        text-align: justify;
+        margin: auto;
+        h2 {
+            text-align: center;
+        }
+    }
+    &-section {
+        padding: 20px;
+    }
+    &-bottom {
+        background: $ceniza;
+        color: $gris;
+        height: 50px;
+        position: absolute;
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.contactForm {
+    margin: 20px 0 20px;
+    #email,
+    #mensaje {
+        background: $negroTransparente;
+        color: $blanco;
+    }
+    .btn__contacto {
+        background: $gris;
+        color: $celeste;
+        text-transform: uppercase;
+        font-weight: bolder;
+        transition: all 0.5s;
+        &:hover {
+            background-color: $blanco;
+            color: $gris;
+        }
+    }
+}
+
+.links,
+.about {
+    margin: 20px 0 20px;
+}
+
+ul {
+    gap: 5px;
+    li {
+        margin: 5px;
+        width: 25%;
+        color: $celeste;
+        text-decoration: none;
+        &:hover {
+            color: $gris;
+        }
+    }
+}
+
+#izzi {
+    text-transform: uppercase;
+    color: $ceniza;
+}

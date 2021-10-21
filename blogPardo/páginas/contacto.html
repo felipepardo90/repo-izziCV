@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/sass/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Contacto</h1>
+        <hr>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="../inicio.html">Inicio</a></li>
+                <li><a href="./formación.html">Formación</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+            </ul>
+        </nav>
+        <p id="imageCenter">
+            <a href="../inicio.html"><img src="../multimedia/imagenLogo.png" alt="" title="logo" width="200"></a>
+        </p>
+    </header>
+    <hr>
+    <main>
+        <form action="" method="GET">
+            <fieldset>
+                <legend>Contáctese conmigo</legend>
+                <br>
+                <div>
+                    <label for="infoNombre">Nombre y apellido:</label>
+                    <input type="text" name="infoNombre" placeholder="Escriba su nombre completo" required>
+                </div>
+                <br>
+                <div>
+                    <label for="infoFechaNac">Fecha de nacimiento:</label>
+                    <input type="date" name="infoFechaNac" required>
+                </div>
+                <br>
+                <div>
+                    <label for="infoCorreo">Correo electrónico:</label>
+                    <input type="text" name="infoCorreo" placeholder="ejemplo@correo.com" required>
+                </div>
+                <br>
+                <div>
+                    <label for="infoSexo">Sexo:</label>
+                    <input type="radio" name="infoSexo" value="masculino">Masculino
+                    <input type="radio" name="infoSexo" value="femenino">Femenino
+                </div>
+                <br>
+                <div>
+                    <label for="infoRegión">Seleccione una región:</label>
+                    <select name="infoRegión" required>
+                    <option value="Salta">Salta</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="Tucumán">Tucumán</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="infoSuscribirse">Quiero suscribirme</label>
+                    <input type="checkbox" name="infoSuscribirse" value="1">
+                </div>
+                <br>
+                <div>
+                    <input type="reset" value="reiniciar">
+                    <input type="submit" value="enviar consulta">
+                </div>
+                <br>
+                <div>
+                    <textarea name="campoConsulta" cols="30" rows="10" placeholder="Escriba su consulta"></textarea>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="headFooter">
+            <h2>Visitá mis redes sociales</h2>
+        </div>
+
+        <div class="redesSociales">
+            <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png" alt="Facebook" width="40" class="fbIcon"></a>
+
+            <a href="https://www.twitter.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384017.png" alt="Twitter" width="40" class="twIcon"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png" alt="Instagram" width="40" class="igIcon"></a>
+
+            <a href="https://www.linkedin.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384014.png" alt="Linkedin" width="40" class="liIcon"></a>
+        </div>
+        <div class="spanFooter">
+            <span>Copyright &reg; Felipe Pardo</span>
+        </div>
+    </footer>
+    <hr>
+</body>
+
+</html>
