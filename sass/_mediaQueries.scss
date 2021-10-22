@@ -1,0 +1,24 @@
+/* 
+
+NOVEDADES 
+
+*/
+
+@media screen and (max-width: 768px) {
+    .titleHeader {
+        text-align: center;
+    }
+    .header {
+        text-align: center;
+        margin: 90px;
+    }
+    .gridContainer .contenido {
+        grid-column: 1/-1;
+    }
+    .gridContainer .aside {
+        grid-column: 1/6;
+    }
+    .gridContainer .postRelacionados {
+        grid-column: 1/-1;
+    }
+}

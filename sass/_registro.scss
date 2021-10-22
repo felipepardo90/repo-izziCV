@@ -1,0 +1,97 @@
+/*
+
+REGISTRO
+
+*/
+
+.contenedor {
+    margin: 0px auto;
+    width: 100%;
+    background: url(../multimedia/Imágenes/contacto.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (2 1fr);
+    .asideRegistro {
+        padding: 20px;
+        margin: 30px auto;
+        border-radius: 3px;
+        background: $negroTransparente;
+        font-family: monospace;
+        grid-row-start: 2;
+        color: $blanco;
+        span {
+            color: $celeste;
+            font-weight: bolder;
+        }
+    }
+    .formRegistro {
+        background: $negroTransparente;
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+        padding: 5px 35px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 3px;
+        grid-row-start: 2;
+        .btnRegistro {
+            width: 100%;
+            font-family: monospace;
+            outline: none;
+            font-size: 16px;
+            background: $negro;
+            border: none;
+            color: $blanco;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: all .5s ease;
+            &:hover {
+                background-color: $ceniza;
+            }
+        }
+        .formHeader {
+            .formTitle {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                font-weight: normal;
+                font-family: monospace;
+                color: $celeste;
+                text-align: center;
+                padding: 14px 0;
+                span {
+                    color: $blanco;
+                    font-weight: bolder;
+                }
+            }
+        }
+        .formLabel {
+            display: block;
+            color: $celeste;
+            font-size: 16px;
+            font-family: monospace;
+            position: relative;
+        }
+        .formInput,
+        .formArea {
+            background: $negroTransparente;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid $gris;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: $blanco;
+            font-family: monospace;
+        }
+        .formArea {
+            resize: vertical;
+            max-height: 150px;
+            min-height: 50px;
+        }
+    }
+}

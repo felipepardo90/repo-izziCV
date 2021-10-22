@@ -1,0 +1,75 @@
+.gridContainer {
+    background-color: #124766;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat (5, 1fr);
+    .titleHeader {
+        grid-column: 1/6;
+        background-color: #124766;
+    }
+    .footer {
+        grid-column: 1/6;
+        background-color: #124766;
+    }
+    .postRelacionados {
+        background: #efca69;
+        color: black;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        &:hover {
+            cursor: pointer;
+            color: white;
+            background: black;
+        }
+    }
+    .aside {
+        grid-column: span 2;
+        background: #efca69;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &img {
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+    .contenido {
+        background: #efca69;
+        grid-column: span 3;
+        &.article {
+            background: #f8efd4;
+            padding: 20px;
+            margin-top: 5px;
+            color: black;
+            &h1 {
+                padding: 10px;
+            }
+            &p {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.gridContainer>.titleHeader,
+.gridContainer>.contenido,
+.gridContainer>.aside,
+.gridContainer>.footer,
+.gridContainer>div {
+    background: #f8efd4;
+    padding: 20px;
+}
+
+.gridContainer>.titleHeader,
+.gridContainer>.footer {
+    grid-column: 1/6;
+    background-color: #124766;
+}
