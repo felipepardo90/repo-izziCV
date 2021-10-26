@@ -4,6 +4,25 @@ NOVEDADES
 
 */
 
+@media (max-width: 840px) {
+    .contenidoNovedades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 655px) {
+    .contenidoNovedades {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* 
+
+ EMPLEOS
+
+*/
+
 @media screen and (max-width: 768px) {
     .titleHeader {
         text-align: center;

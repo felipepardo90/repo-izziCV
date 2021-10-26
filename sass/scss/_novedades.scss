@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+
+NOVEDADES
+
+*/
+
+body {
+    font-family: sans-serif;
+}
+
+.novedadesCont {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+}
+
+.novedades {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.contenidoNovedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    .post {
+        box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .2s;
+        &Img1 {
+            background: url("../../multimedia/Imágenes/noticia1.jpg");
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            transition: .2s;
+        }
+        &Img2 {
+            background: url("../../multimedia/Imágenes/noticia2.jpg");
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            transition: .2s;
+        }
+        &Img3 {
+            background: url("../../multimedia/Imágenes/noticia3.jpg");
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            transition: .2s;
+        }
+        &Img4 {
+            background: url("../../multimedia/Imágenes/noticia4.jpg");
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            transition: .2s;
+        }
+        &Img5 {
+            background: url("../../multimedia/Imágenes/noticia5.jpg");
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            transition: .2s;
+        }
+        &Img6 {
+            background: url("../../multimedia/Imágenes/noticia6.jpg");
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            transition: .2s;
+        }
+        &Header {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        &:hover {
+            transform: translateY(-4px);
+            .postImg1 {
+                transform: scale(1.1);
+            }
+            .postImg2 {
+                transform: scale(1.1);
+            }
+            .postImg3 {
+                transform: scale(1.1);
+            }
+            .postImg4 {
+                transform: scale(1.1);
+            }
+            .postImg5 {
+                transform: scale(1.1);
+            }
+            .postImg6 {
+                transform: scale(1.1);
+            }
+        }
+        &Body {
+            padding: 15px;
+            text-align: center;
+            span {
+                display: inline-block;
+                color: $celeste;
+                margin-bottom: 10px;
+            }
+            h2 {
+                margin-bottom: 15px;
+            }
+            p {
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.sidebarNews {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    padding: 30px 15px;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 
+
+BOTONES LINKS ENLACES
+
+*/
+
+.postBody .btnEnlace {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: $gris;
+    color: $celeste;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transition: .3s;
+    &:hover {
+        background-color: $celeste;
+        color: $blanco;
+        box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+        transform: translateY(-2px);
+    }
+}
+
+@import "_mediaQueries";

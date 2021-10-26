@@ -17,7 +17,7 @@
 
     <!--  -->
 
-    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../sass/css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <!--Fuente GRID  -->
@@ -29,7 +29,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-transparent">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center" href="../index.html">
                     <img src="../multimedia/imagenLogo.png" alt="logo" width="100" class="d-inline-block align-text-top"> <span id="izzi">Izzi</span>
@@ -38,70 +38,101 @@
         </nav>
     </header>
 
-    <!-- Aplicando GRID -->
+    <main>
+        <div class="novedadesCont">
 
-    <div class="gridContainer">
-        <header class="titleHeader">
-            <h1>Breve repaso de experiencias laborales y estudios hasta la fecha</h1>
-        </header>
-        <main class="contenido">
-            <article class="article__uno">
-                <h1 class="article__uno--título">Inicios</h1>
-                <p class="article__uno article--p1">Mis estudios secundarios los he finalizado en la Escuela de Educación Técnica 5117 de mi barrio, San Remo, en Salta Capital. De allí me llamó mucho la atención por las nuevas tecnologías. Finalizados mis estudios secundarios, cursé un
-                    año de la carrera Analista de Sistemas, en 2009.</p>
-                <p class="article__uno article--p2">La carrera la abandoné por motivos personales.</p>
-                <p class="article__uno article--p3">En aquel momento, estuve enfocado en trabajar y estudiar un terciario</p>
-            </article>
-            <article class="article__dos">
-                <h1 class="article__dos--título">Otros estudios</h1>
-                <p class="article__21--párrafo">En el transcurso de 9 largos años me pude desempeñar en diversos trabajos, pasando desde el ámbito de las comunicaciones, el periodismo y las presentaciones, hasta en la gastronomía y las cocinas regionales. </p>
-                <p class="article__22--párrafo">Logré mientras tanto terminar un curso de Cocina Profesional en 2015</p>
-                <p class="article__23--párrafo">Más tarde en el tiempo, he vuelto a introducirme en el ámbito de la tecnología</p>
-            </article>
-            <article class="article__tres">
-                <h1 class="article__tres--título">Actualidad</h1>
-                <p class="article__31--párrafo">Desde hace cuatro años me desempeño en un servicio de emergencias médicas "Paramedic". El trabajo demanda mucha cooperación, empatía y fortaleza mental para afrontar todo tipo de situaciones problemáticas que se presentan día a día.</p>
-                <p class="article__32--párrafo">Desde marzo de 2020 al inicio de la pandemia, hemos duplicado esfuerzos ya que hemos tenido que afrontar bajas, licencias y aislamientos. </p>
-                <p class="article__33--párrafo">Cabe recalcar que toda la capacitación en cuanto al área de salud la recibí en el lugar de trabajo, ya que ingresé sin conocimiento alguno.</p>
-            </article>
-        </main>
+            <section class="novedades">
+                <div class="contenidoNovedades">
+                    <article class="post">
+                        <div class="postHeader">
+                            <div class="postImg1"></div>
+                        </div>
+                        <div class="postBody">
+                            <span>19 de Octubre 2021</span>
+                            <h2>Cómo usar Postman para probar nuestras APIs</h2>
+                            <p> Cómo trabajar con Postman, un programa gratuito para ejecutar endpoints de aplicaciones backend basadas en APIs o API REST. </p>
+                            <a href="https://desarrolloweb.com/articulos/como-usar-postman-probar-api" class="btnEnlace" target="_blank">Leer más...</a>
+                        </div>
+                    </article>
+                    <article class="post">
+                        <div class="postHeader">
+                            <div class="postImg2"></div>
+                        </div>
+                        <div class="postBody">
+                            <span>23 de octubre de 2021</span>
+                            <h2>Visual Studio Code se reconvierte en aplicación web y apuntala su futuro</h2>
+                            <p> Visual Studio Code se ha convertido en los últimos años en el editor de código más popular del panorama.
+                            </p>
+                            <a href="https://www.muycomputer.com/2021/10/23/visual-studio-code/" class="btnEnlace" target="_blank">Leer más...</a>
+                        </div>
+                    </article>
+                    <article class="post">
+                        <div class="postHeader">
+                            <div class="postImg3"></div>
+                        </div>
+                        <div class="postBody">
+                            <span>20 de octubre de 2021</span>
+                            <h2>Los 8 cursos online más elegidos en Argentina</h2>
+                            <p> Hoy en día, el aprendizaje de nuevas habilidades se logra de distintas maneras. Ya no es necesario hacer cursos en universidades o en centros de capacitación especializados.</p>
+                            <a href="https://www.lacapital.com.ar/los-8-cursos-online-mas-elegidos-argentina-n2695836.html" target="_blank" class="btnEnlace">Leer más...</a>
+                        </div>
+                    </article>
 
-        <!-- ASIDE -->
+                    <!-- Segunda FILA -->
 
-        <Aside class="aside">
-            <div>
-                <img class="aside__img" src="../multimedia/Imágenes/unsa.jpg" alt="" width="340px" height="190px">
-                <p>Durante el 2009 pude cursar en la Universidad Nacional de Salta</p>
-            </div>
-            <div>
-                <img class="aside__img" src="../multimedia/Imágenes/cocina.jpg" alt="" width="340px" height="190px">
-                <p>La cocina, una de mis pasiones</p>
-            </div>
-            <div>
-                <img class="aside__img" src="../multimedia/Imágenes/paramedic.jpg" alt="" width="340px" height="190px">
-                <p>Ambulancia de Paramedic de una sede de Capital Federal</p>
-            </div>
-        </Aside>
+                    <article class="post">
+                        <div class="postHeader">
+                            <div class="postImg4"></div>
+                        </div>
+                        <div class="postBody">
+                            <span>25 de Octubre 2021</span>
+                            <h2>Las 8 competencias digitales que todo empleado debe tener</h2>
+                            <p> Las empresas tecnológicas, y de hecho todas las organizaciones de la economía digital, se están percatando de que las habilidades digitales son vitales para los empleados en la era digital. </p>
+                            <a href="https://avilared.com/art/57973/las-8-competencias-digitales-que-todo-empleado-debe-tener" class="btnEnlace" target="_blank">Leer más...</a>
+                        </div>
+                    </article>
+                    <article class="post">
+                        <div class="postHeader">
+                            <div class="postImg5"></div>
+                        </div>
+                        <div class="postBody">
+                            <span>24 de octubre de 2021</span>
+                            <h2>El mejor software de código abierto de 2021, según InfoWorld</h2>
+                            <p> «Es posible que el dinero no crezca en los árboles, pero sí en los repositorios de GitHub», describen desde InfoWorld al anunciar los que a su juicio han sido los mejores desarrollos de 2021.
+                            </p>
+                            <a href="https://www.muycomputer.com/2021/10/25/software-de-codigo-abierto-2021/" class="btnEnlace" target="_blank">Leer más...</a>
+                        </div>
+                    </article>
+                    <article class="post">
+                        <div class="postHeader">
+                            <div class="postImg6"></div>
+                        </div>
+                        <div class="postBody">
+                            <span>20 de octubre de 2021</span>
+                            <h2>Cómo desbloquear el ‘Modo Dios’ de Windows 11</h2>
+                            <p> El ‘Modo Dios de Windows 11’ funciona de la misma manera que lo hace en Windows 10 y tiene sus mismo objetivos: facilitar el acceso a una zona de súper administración</p>
+                            <a href="https://www.muycomputer.com/2021/10/20/modo-dios-de-windows-11/" target="_blank" class="btnEnlace">Leer más...</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-        <!-- POSTS RELACIONADOS -->
+            <aside class="sidebarNews">
+                <article class="post">
+                    <div class="postHeader">
+                        <div class="postImg1"></div>
+                    </div>
+                    <div class="postBody">
+                        <span>19 de Octubre 2021</span>
+                        <h2>Cómo usar Postman para probar nuestras APIs</h2>
+                        <p> Cómo trabajar con Postman, un programa gratuito para ejecutar endpoints de aplicaciones backend basadas en APIs o API REST. </p>
+                    </div>
+                </article>
+            </aside>
 
-        <div class="postRelacionados">
-            Otra publicación
         </div>
-        <div class="postRelacionados">
-            Otra publicación
-        </div>
-        <div class="postRelacionados">
-            Otra publicación
-        </div>
-        <div class="postRelacionados">
-            Otra publicación
-        </div>
-        <div class="postRelacionados">
-            Otra publicación
-        </div>
 
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="footer-content d-flex flex-row">
@@ -149,6 +180,7 @@
             &copy;Izzi.com | por Felipe Pardo
         </div>
     </footer>
+
 
     <!-- Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

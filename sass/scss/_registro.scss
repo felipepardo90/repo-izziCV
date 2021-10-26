@@ -4,10 +4,11 @@ REGISTRO
 
 */
 
+@import "_paletaColores.scss";
 .contenedor {
     margin: 0px auto;
     width: 100%;
-    background: url(../multimedia/Imágenes/contacto.jpg) no-repeat center center fixed;
+    background: url("../../multimedia/Imágenes/contacto.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: grid;
