@@ -4,6 +4,16 @@ NOVEDADES
 
 */
 
+@media (max-width: 1280px) {
+    .novedadesCont .novedades {
+        grid-column: 1/-1;
+    }
+    .novedadesCont .sidebarNews {
+        grid-column: 1/-1;
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 840px) {
     .contenidoNovedades {
         grid-template-columns: repeat(2, 1fr);
@@ -13,6 +23,9 @@ NOVEDADES
 @media (max-width: 655px) {
     .contenidoNovedades {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .sidebarNews {
+        grid-column: 1/-1;
     }
 }
 
