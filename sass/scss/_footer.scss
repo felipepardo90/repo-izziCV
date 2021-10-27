@@ -60,9 +60,6 @@ ul {
         padding: 20px;
         text-align: justify;
         margin: auto;
-        h2 {
-            text-align: center;
-        }
     }
     &-section {
         padding: 20px;
@@ -76,10 +73,21 @@ ul {
         width: 100%;
         text-align: center;
     }
+    .about {
+        ul a {
+            border: solid white 1px;
+            padding: 5px;
+            border-radius: 10px;
+            transition: all .2s;
+            &:hover {
+                transform: translateY(-2px);
+                background-color: $blanco;
+            }
+        }
+    }
 }
 
 .contactForm {
-    margin: 20px 0 20px;
     #email,
     #mensaje {
         background: $negroTransparente;
@@ -96,11 +104,6 @@ ul {
             color: $gris;
         }
     }
-}
-
-.links,
-.about {
-    margin: 20px 0 20px;
 }
 
 ul {

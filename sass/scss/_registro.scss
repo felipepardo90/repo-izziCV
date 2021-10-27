@@ -7,22 +7,25 @@ REGISTRO
 @import "_paletaColores.scss";
 .contenedor {
     margin: 0px auto;
-    width: 100%;
+    width: auto;
     background: url("../../multimedia/Imágenes/contacto.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     display: grid;
+    grid-template-areas: "head head" " aside form" " aside form";
     grid-gap: 20px;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: repeat (2 1fr);
     .asideRegistro {
         padding: 20px;
-        margin: 30px auto;
+        margin: 30px;
         border-radius: 3px;
         background: $negroTransparente;
         font-family: monospace;
-        grid-row-start: 2;
         color: $blanco;
+        grid-area: aside;
+        .imgRegistro {
+            margin: auto;
+            text-align: center;
+        }
         span {
             color: $celeste;
             font-weight: bolder;
@@ -32,12 +35,12 @@ REGISTRO
         background: $negroTransparente;
         width: 90%;
         max-width: 650px;
-        margin: auto;
+        margin: 30px;
         padding: 5px 35px;
         margin-top: 30px;
         padding-bottom: 30px;
         border-radius: 3px;
-        grid-row-start: 2;
+        grid-area: form;
         .btnRegistro {
             width: 100%;
             font-family: monospace;

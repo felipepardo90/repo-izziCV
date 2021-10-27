@@ -54,3 +54,39 @@ NOVEDADES
         grid-column: 1/-1;
     }
 }
+
+
+/*
+
+REGISTRO
+
+*/
+
+@media (max-width: 1400px) {
+    .contenedor {
+        grid-template-areas: "header header" "aside aside" "form form";
+    }
+    .formRegistro {
+        float: right;
+    }
+}
+
+@media (max-width: 940px) {
+    .contenedor {
+        grid-template-areas: "header header" "aside aside" "form form";
+    }
+}
+
+
+/*
+
+FOOTER
+
+*/
+
+@media (max-width: 1030px) {
+    .footer-content {
+        display: grid;
+        grid-template-areas: "head head" "main main" "foot foot";
+    }
+}
