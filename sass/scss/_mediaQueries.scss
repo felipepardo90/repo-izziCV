@@ -65,9 +65,9 @@ REGISTRO
 @media (max-width: 1400px) {
     .contenedor {
         grid-template-areas: "header header" "aside aside" "form form";
-    }
-    .formRegistro {
-        float: right;
+        .formRegistro {
+            margin: 30px auto;
+        }
     }
 }
 

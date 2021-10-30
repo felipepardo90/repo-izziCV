@@ -328,8 +328,8 @@ REGISTRO
   .contenedor {
         grid-template-areas: "header header" "aside aside" "form form";
   }
-  .formRegistro {
-    float: right;
+  .contenedor .formRegistro {
+    margin: 30px auto;
   }
 }
 
@@ -764,8 +764,8 @@ REGISTRO
   .contenedor {
         grid-template-areas: "header header" "aside aside" "form form";
   }
-  .formRegistro {
-    float: right;
+  .contenedor .formRegistro {
+    margin: 30px auto;
   }
 }
 
