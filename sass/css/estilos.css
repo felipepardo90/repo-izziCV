@@ -326,7 +326,7 @@ REGISTRO
 */
 @media (max-width: 1400px) {
   .contenedor {
-        grid-template-areas: "header header" "aside aside" "form form";
+        grid-template-areas: "head head" "aside aside" "form form";
   }
   .contenedor .formRegistro {
     margin: 30px auto;
@@ -335,7 +335,7 @@ REGISTRO
 
 @media (max-width: 940px) {
   .contenedor {
-        grid-template-areas: "header header" "aside aside" "form form";
+        grid-template-areas: "head head" "aside aside" "form form";
   }
 }
 
@@ -344,11 +344,11 @@ REGISTRO
 FOOTER
 
 */
-@media (max-width: 1030px) {
+@media screen and (max-width: 768px) {
   .footer-content {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "head head" "main main" "foot foot";
+    height: initial;
+    background-color: #55a293;
+    text-align: center;
   }
 }
 
@@ -762,7 +762,7 @@ REGISTRO
 */
 @media (max-width: 1400px) {
   .contenedor {
-        grid-template-areas: "header header" "aside aside" "form form";
+        grid-template-areas: "head head" "aside aside" "form form";
   }
   .contenedor .formRegistro {
     margin: 30px auto;
@@ -771,7 +771,7 @@ REGISTRO
 
 @media (max-width: 940px) {
   .contenedor {
-        grid-template-areas: "header header" "aside aside" "form form";
+        grid-template-areas: "head head" "aside aside" "form form";
   }
 }
 
@@ -780,11 +780,11 @@ REGISTRO
 FOOTER
 
 */
-@media (max-width: 1030px) {
+@media screen and (max-width: 768px) {
   .footer-content {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "head head" "main main" "foot foot";
+    height: initial;
+    background-color: #55a293;
+    text-align: center;
   }
 }
 
