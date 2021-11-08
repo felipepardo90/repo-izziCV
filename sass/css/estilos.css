@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville:ital@1&family=Satisfy&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -354,31 +356,97 @@ FOOTER
 
 /*
 
+SOBRE NOSOTROS
+
+*/
+@media screen and (max-width: 1024px) {
+  .sobreNosotros .texto {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .sobreNosotros .texto h1 {
+    color: #55a293;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .sobreNosotros .texto div {
+    text-align: center;
+  }
+  .sobreNosotros .main {
+    padding: 78px 0px;
+    width: auto;
+    max-width: 95%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .sobreNosotros .main .imgAbout img {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .sobreNosotros .main .imgAbout img {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .headerArea .headerTitle {
+    width: 280px;
+  }
+}
+
+.headerArea .headerTitle h2 {
+  text-align: center;
+  line-height: 110px;
+  font-size: 36px;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .headerArea .headerTitle h2 {
+    font-size: 24px;
+  }
+}
+
+/*
+
 INDEX
 
 */
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.banner1 {
+  background: url("../../multimedia/Imágenes/promoBanner.jpg");
+  background-position: center fixed;
+  background-size: cover;
+  height: 840px;
+}
+
+.mainBanner {
+  margin: 20px;
+  padding: 1.5em;
+  width: 50%;
 }
 
 .bgInicio {
   background: url("../../multimedia/Imágenes/background.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: calc(100vh);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100vh;
 }
 
 .hInicio {
@@ -790,6 +858,70 @@ FOOTER
 
 /*
 
+SOBRE NOSOTROS
+
+*/
+@media screen and (max-width: 1024px) {
+  .sobreNosotros .texto {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .sobreNosotros .texto h1 {
+    color: #55a293;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .sobreNosotros .texto div {
+    text-align: center;
+  }
+  .sobreNosotros .main {
+    padding: 78px 0px;
+    width: auto;
+    max-width: 95%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .sobreNosotros .main .imgAbout img {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .sobreNosotros .main .imgAbout img {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .headerArea .headerTitle {
+    width: 280px;
+  }
+}
+
+.headerArea .headerTitle h2 {
+  text-align: center;
+  line-height: 110px;
+  font-size: 36px;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .headerArea .headerTitle h2 {
+    font-size: 24px;
+  }
+}
+
+/*
+
 EMPLEOS
 
 
@@ -951,6 +1083,7 @@ BANNER
   padding-bottom: 30px;
   font-size: 40px;
   text-align: center;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .banner-content a {
@@ -1021,5 +1154,112 @@ BANNER
   100% {
     background-image: url(../../multimedia/Imágenes/banner4.jpg);
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.sobreNosotros {
+  width: 100%;
+  padding: 150px 0px;
+  background-color: #f8f9f4;
+}
+
+.sobreNosotros img {
+  height: auto;
+  width: 420px;
+}
+
+.sobreNosotros .main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.texto {
+  width: 550px;
+}
+
+.texto h1 {
+  color: #55a293;
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.texto h4 {
+  color: #051218;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.texto p {
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+span {
+  color: #468a89;
+}
+
+button {
+  background: #468a89;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid #468a89;
+  color: black;
+  cursor: pointer;
+}
+
+/*
+
+BREADCRUMB
+
+*/
+.headerArea {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 200px;
+  background: -webkit-gradient(linear, left top, right top, from(#468a89), to(#f8f9f4));
+  background: linear-gradient(to right, #468a89, #f8f9f4);
+}
+
+.headerArea .headerTitle {
+  width: 500px;
+  height: 110px;
+  background: #468a89;
+  position: absolute;
+  bottom: -60px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
 }
 /*# sourceMappingURL=estilos.css.map */

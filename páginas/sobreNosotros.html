@@ -21,34 +21,49 @@
 
 <body>
 
-    <!-- Header -->
+    <!-- HEADER -->
+    <nav class="navbar navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../multimedia/imagenLogo.png" alt="logo" width="100" class="d-inline-block align-text-top"> <span id="izzi">Izzi</span>
+            </a>
+        </div>
+    </nav>
+    <!-- HEADER FIN -->
 
-    <header>
-        <nav class="navbar navbar-light bg-transparent">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                    <img src="../multimedia/imagenLogo.png" alt="logo" width="100" class="d-inline-block align-text-top"> <span id="izzi">Izzi</span>
-                </a>
+    <!-- BREADCRUMB -->
+    <div class="headerArea">
+        <div class="headerTitle">
+            <h2>¿Quiénes somos?</h2>
+        </div>
+    </div>
+    <!-- BC END -->
+
+    <!-- MAIN -->
+    <section class="sobreNosotros">
+        <div class="main">
+            <div class="imgAbout">
+                <img src="../multimedia/Imágenes/business1.jpg">
             </div>
-        </nav>
-    </header>
+            <div class="texto">
+                <h1>Sobre Nosotros</h1>
+                <h4> <span>Valores</span> y Profesionalismo</h4>
+                <p>Quienes componemos Tu CV en linea queremos ofrecer a los jóvenes profesionales una opción de poder ser visibles a través de un blog personalizado, versátil y cómodo. No solo se podrá visualizar el perfil profesional de los postulantes,
+                    sino que Tu CV en línea muestra nuestra faceta más humana, nuestros pasatiempos y gustos personales.</p>
+                <div class="botónAbout">
+                    <a href="registro.html"><button type="button">Regístrate</button></a>
 
-    <!-- Contenedor Contenido UNO -->
-
-    <main class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="contenidoUno c__cUno">
-                    <h1 class="c__cUno--h1">¿Quiénes somos?</h1>
-                    <p class="c__cUno--p">Quienes componemos Tu CV en linea queremos ofrecer a los jóvenes profesionales una opción de poder ser visibles a través de un blog personalizado, versátil y cómodo. No solo se podrá visualizar el perfil profesional de los postulantes,
-                        sino que Tu CV en línea muestra nuestra faceta más humana, nuestros pasatiempos y gustos personales.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Carrousel -->
+    <!-- FIN MAIN -->
 
-        <div class="row justify-content-center">
+
+    <!-- Carrousel -->
+
+    <!-- <div class="row justify-content-center">
             <div class="col-8">
 
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -91,10 +106,10 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
 
-        <!-- CONTENIDO DOS -->
-        <div class="row">
+    <!-- CONTENIDO DOS -->
+    <!-- <div class="row">
             <div class="col-3">
                 <div class="seccionUno">
                     <article>
@@ -121,15 +136,15 @@
             </div>
         </div>
 
-    </main>
+    </main> -->
     <footer class="footer">
-        <div class="footer-content d-flex flex-row">
+        <div class="footer-content d-flex flex-column flex-md-row">
 
-            <div class="footer-section about col-4 d-flex flex-column justify-content-between">
+            <div class="footer-section about col-md-4 d-flex flex-column justify-content-between">
 
                 <h2> <span id="izzi">Izzi</span>Online</h2>
                 <p> Izzi Tu CV Online es una página web ficticia creada como un primer proyecto para un curso de Desarrollo Web en CODERHOUSE, con las clases del profesor José Amador y la tutoría de Luna Rico</p>
-                <ul class="d-flex flex-row-reverse">
+                <ul class="d-flex justify-content-center justify-content-md-end">
                     <a href="https://www.facebook.com/" target="_blank"><img src="../multimedia/Imágenes/socialMedia/facebook.png" alt="Facebook" width="30" class=""></a>
 
                     <a href="https://www.twitter.com/" target="_blank"><img src="../multimedia/Imágenes/socialMedia/twitter.png" alt="Twitter" width="30" class=""></a>
@@ -140,9 +155,9 @@
                 </ul>
 
             </div>
-            <div class="footer-section links col-4 d-flex flex-column justify-content-between">
+            <div class="footer-section links col-md-4 d-flex flex-column justify-content-between">
                 <h2>Mapa de navegación</h2>
-                <ul class="d-flex flex-column justify-content-between">
+                <ul class="d-flex flex-column align-items-center flex-sm-row flex-md-column align-items-md-start">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="registro.html">Registro</a></li>
                     <li><a href="empleos.html">Empleos</a></li>
@@ -150,7 +165,7 @@
                     <li><a href="sobreNosotros.html">Nosotros</a></li>
                 </ul>
             </div>
-            <div class="footer-section contactForm col-4 d-flex flex-column justify-content-between">
+            <div class="footer-section contactForm col-md-4 d-flex flex-column justify-content-between">
                 <h2>Contáctanos</h2>
                 <form class="d-flex flex-column justify-content-around" action="">
                     <label for="email" class="formLabel">E-mail:</label>

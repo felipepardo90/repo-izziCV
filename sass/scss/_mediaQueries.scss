@@ -91,3 +91,67 @@ FOOTER
         text-align: center;
     }
 }
+
+
+/*
+
+SOBRE NOSOTROS
+
+*/
+
+@media screen and (max-width: 1024px) {
+    .sobreNosotros .texto {
+        width: 90%;
+        margin-bottom: 20px;
+        h1 {
+            color: $celeste;
+            font-size: 80px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        div {
+            text-align: center;
+        }
+    }
+    .sobreNosotros .main {
+        padding: 78px 0px;
+        width: auto;
+        max-width: 95%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+        .imgAbout img {
+            width: 100%;
+            height: 50vh;
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .sobreNosotros .main {
+        .imgAbout img {
+            width: 100%;
+            height: 40vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .headerArea .headerTitle {
+        width: 280px;
+    }
+}
+
+.headerArea .headerTitle h2 {
+    text-align: center;
+    line-height: 110px;
+    font-size: 36px;
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .headerArea .headerTitle h2 {
+        font-size: 24px;
+    }
+}

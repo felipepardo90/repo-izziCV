@@ -7,16 +7,26 @@ INDEX
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.banner1 {
+    background: url("../../multimedia/Imágenes/promoBanner.jpg");
+    background-position: center fixed;
+    background-size: cover;
+    height: 840px;
+}
+
+.mainBanner {
+    margin: 20px;
+    padding: 1.5em;
+    width: 50%;
 }
 
 .bgInicio {
     background: url("../../multimedia/Imágenes/background.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
 
 // body {

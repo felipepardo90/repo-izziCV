@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville:ital@1&family=Satisfy&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.sobreNosotros {
+    width: 100%;
+    padding: 150px 0px;
+    background-color: $blanco;
+    img {
+        height: auto;
+        width: 420px;
+    }
+    .main {
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.texto {
+    width: 550px;
+    h1 {
+        color: $celeste;
+        font-size: 80px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    h4 {
+        color: $negro;
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+    p {
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+}
+
+span {
+    color: $ceniza;
+}
+
+button {
+    background: $ceniza;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    &:hover {
+        background: transparent;
+        border: 2px solid $ceniza;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+
+/*
+
+BREADCRUMB
+
+*/
+
+.headerArea {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, $ceniza, $blanco);
+}
+
+.headerArea .headerTitle {
+    width: 500px;
+    height: 110px;
+    background: $ceniza;
+    position: absolute;
+    bottom: -60px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+}
