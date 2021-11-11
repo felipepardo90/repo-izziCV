@@ -418,11 +418,6 @@ SOBRE NOSOTROS
   }
 }
 
-/*
-
-INDEX
-
-*/
 * {
   margin: 0;
   padding: 0;
@@ -430,50 +425,214 @@ INDEX
           box-sizing: border-box;
 }
 
-.banner1 {
-  background: url("../../multimedia/Imágenes/promoBanner.jpg");
-  background-position: center fixed;
-  background-size: cover;
-  height: 840px;
+/* NAVBAR */
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  /* IMAGEN */
+  /* LOGIN */
 }
 
-.mainBanner {
-  margin: 20px;
-  padding: 1.5em;
+section .imgIndex {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+section .imgIndex:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, #08b9c5, #f8f8f8);
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+
+section .imgIndex img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section .logIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .logIn .formLogin {
   width: 50%;
 }
 
-.bgInicio {
-  background: url("../../multimedia/Imágenes/background.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
+section .logIn .formLogin h2 {
+  color: #55a293;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #468a89;
+  display: inline-block;
+  letter-spacing: 1px;
 }
 
-.hInicio {
-  font-family: 'Abril Fatface';
-  font-size: 50px;
-  border: 2px solid #051218;
-  padding: 20px;
-  text-align: center;
-  color: #051218;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+section .logIn .formLogin .recordarme {
+  margin-bottom: 10px;
+  color: #5a5c6a;
+  font-weight: 400;
+  font-size: 14px;
 }
 
-.hInicio h1 {
-  margin: 0;
-  padding: 30px;
+section .logIn .formLogin .inputLog p {
+  color: #5a5c6a;
 }
 
-.hInicio h2 {
-  margin: 0;
-  padding: 30px;
+section .logIn .formLogin .inputLog {
+  margin-bottom: 20px;
 }
 
-.hInicio:hover {
-  cursor: pointer;
+section .logIn .formLogin .inputLog span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #5a5c6a;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+section .logIn .formLogin .inputLog input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid grey;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #5a5c6a;
+  background: transparent;
+  border-radius: 30px;
+}
+
+section .logIn .formLogin .inputLog input[type="submit"] {
+  background: #468a89;
   color: #f8f9f4;
-  background: rgba(71, 79, 150, 0.5);
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+section .logIn .formLogin .inputLog input[type="submit"]:hover {
+  background: #2b6463;
+}
+
+section .logIn .formLogin .inputLog p a {
+  color: #468a89;
+}
+
+section .logIn .formLogin h3 {
+  color: #5a5c6a;
+  text-align: center;
+  margin: 80px 0 10px;
+  font-weight: 500;
+}
+
+section .logIn .formLogin .sci {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .logIn .formLogin .sci li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #5a5c6a;
+  border-radius: 50%;
+  width: 50px !important;
+  margin: 0 7px;
+  cursor: pointer;
+}
+
+section .logIn .formLogin .sci li:hover {
+  background: #468a89;
+}
+
+section .logIn .formLogin .sci li img {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+@media (max-width: 768px) {
+  section .imgIndex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  section .logIn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1;
+  }
+  section .logIn .formLogin {
+    width: 100%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 50px;
+  }
+  section .logIn .formLogin h3 {
+    color: #5a5c6a;
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 500;
+  }
 }
 
 * {

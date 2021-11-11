@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 
@@ -16,7 +16,6 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!--  -->
 
@@ -27,51 +26,75 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <div class="container-fluid">
-                <class class="navbar-brand" href="#">
-                    <a href="./index.html">
-                        <img src="./multimedia/imagenLogo.png" alt="" title="logo" width="100"><span id="izzi">Izzi</span>
-                    </a>
-                </class>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <class class="navbar-brand" href="#">
+                <a href="./index.html">
+                    <img src="./multimedia/imagenLogo.png" alt="" title="logo" width="100"><span id="izzi">Izzi</span>
+                </a>
+            </class>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" href="./páginas/registro.html">Registro</a>
-                        <a class="nav-link active" href="./páginas/empleos.html">Empleos</a>
-                        <a class="nav-link active" href="./páginas/novedades.html">Novedades</a>
-                        <a class="nav-link active" href="./páginas/sobreNosotros.html">Sobre Nosotros</a>
-                    </div>
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="./páginas/registro.html">Registro</a>
+                    <a class="nav-link active" href="./páginas/empleos.html">Empleos</a>
+                    <a class="nav-link active" href="./páginas/novedades.html">Novedades</a>
+                    <a class="nav-link active" href="./páginas/sobreNosotros.html">Sobre Nosotros</a>
                 </div>
             </div>
-        </nav>
-    </header>
-    <!-- Banner -->
-    <section class="banner">
-        <div class="banner-content">
-            <h1>Bienvenidos a IZZI - Tu CV Online</h1>
-            <a href="../index.html">INICIO</a>
         </div>
-    </section>
-    <!-- Main -->
-    <main>
-        <div class="bannerMain">
-            <div class="">
-                <h1>BE INSPIRED!</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, beatae perspiciatis blanditiis eius aspernatur accusamus?</p>
-                <span>WATCH NOW</span>
+    </nav>
+
+    <!-- Banner -->
+
+    <section>
+
+        <div class="imgIndex">
+            <img src="./multimedia/Imágenes/background.jpg" alt="Izzi">
+        </div>
+
+        <!-- Login -->
+
+        <div class="logIn">
+            <div class="formLogin">
+                <h2>Login</h2>
+                <form>
+                    <div class="inputLog">
+                        <span>Usuario</span>
+                        <input type="text">
+                    </div>
+                    <div class="inputLog">
+                        <span>Contraseña</span>
+                        <input type="password">
+                    </div>
+                    <div class="recordarme">
+                        <label><input type="checkbox"> Recordarme</label>
+                    </div>
+                    <div class="inputLog">
+                        <input type="submit" value="Ingresar">
+                    </div>
+                    <div class="inputLog">
+                        <p>¿No estás registrado? <a href="páginas/registro.html">Regístrate</a></p>
+                    </div>
+                </form>
+                <h3>Ingresá desde tus redes</h3>
+                <ul class="sci">
+                    <li><img src="./multimedia/Imágenes/socialMedia/facebook.png" alt="" height="50px"></li>
+                    <li><img src="./multimedia/Imágenes/socialMedia/instagram.png" alt="" height="50px"></li>
+                    <li><img src="./multimedia/Imágenes/socialMedia/twitter.png" alt="" height="50px"></li>
+                </ul>
             </div>
         </div>
 
+        <!-- Login fin -->
 
-        <div class="bgInicio">
+    </section>
 
-        </div>
-    </main>
     <!-- Footer -->
+
+
     <footer class="footer">
         <div class="footer-content d-flex flex-column flex-md-row">
 
