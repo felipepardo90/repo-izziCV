@@ -7,7 +7,7 @@
 
 /* NAVBAR */
 
-section {
+.iSection {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -69,7 +69,7 @@ section {
     }
 }
 
-section .logIn .formLogin .inputLog {
+.iSection .logIn .formLogin .inputLog {
     margin-bottom: 20px;
     span {
         font-size: 16px;
@@ -106,24 +106,24 @@ section .logIn .formLogin .inputLog {
     }
 }
 
-section .logIn .formLogin .inputLog p a {
+.iSection .logIn .formLogin .inputLog p a {
     color: $ceniza;
 }
 
-section .logIn .formLogin h3 {
+.iSection .logIn .formLogin h3 {
     color: $gris;
     text-align: center;
     margin: 80px 0 10px;
     font-weight: 500;
 }
 
-section .logIn .formLogin .sci {
+.iSection .logIn .formLogin .sci {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section .logIn .formLogin .sci li {
+.iSection .logIn .formLogin .sci li {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -135,24 +135,24 @@ section .logIn .formLogin .sci li {
     cursor: pointer;
 }
 
-section .logIn .formLogin .sci li:hover {
+.iSection .logIn .formLogin .sci li:hover {
     background: $ceniza;
 }
 
-section .logIn .formLogin .sci li img {
+.iSection .logIn .formLogin .sci li img {
     transform: scale(0.5);
     filter: invert(1);
 }
 
 @media (max-width: 768px) {
-    section .imgIndex {
+    .iSection .imgIndex {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
     }
-    section .logIn {
+    .iSection .logIn {
         display: flex;
         width: 100%;
         height: 100%;
@@ -160,13 +160,13 @@ section .logIn .formLogin .sci li img {
         align-items: center;
         z-index: 1;
     }
-    section .logIn .formLogin {
+    .iSection .logIn .formLogin {
         width: 100%;
         padding: 40px;
         background: rgba(255, 255, 255, .5);
         margin: 50px;
     }
-    section .logIn .formLogin h3 {
+    .iSection .logIn .formLogin h3 {
         color: $gris;
         text-align: center;
         margin: 30px 0 10px;
