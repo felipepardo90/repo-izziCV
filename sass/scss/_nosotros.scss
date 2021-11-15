@@ -83,6 +83,13 @@ BREADCRUMB
     background: linear-gradient(to right, $ceniza, $blanco);
 }
 
+.headerArea .headerTitle h2 {
+    text-align: center;
+    line-height: 110px;
+    font-size: 36px;
+    color: white;
+}
+
 .headerArea .headerTitle {
     width: 500px;
     height: 110px;
@@ -92,4 +99,96 @@ BREADCRUMB
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     left: 50%;
+}
+
+
+/*
+
+NUESTRO EQUIPO
+
+*/
+
+.teamContainer {
+    text-align: center;
+    background-color: $blanco;
+}
+
+.teamHeader {
+    padding-top: 60px;
+    color: $gris;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.sub-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.integrante #profile {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.integrante {
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: .4s;
+    box-sizing: border-box;
+}
+
+.integrante:hover {
+    background-color: lightgrey;
+    border-radius: 12px;
+}
+
+.nombre {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.cargo {
+    color: $ceniza;
+}
+
+.perfil {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: $gris;
+}
+
+.teamRedes {
+    margin: 14px;
+}
+
+.teamRedes img {
+    width: 20px;
+    height: 20px;
+}
+
+.teamRedes a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+
+.teamRedes a:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 767px) {
+    .integrante {
+        max-width: 100%;
+    }
 }
