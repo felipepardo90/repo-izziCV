@@ -28,16 +28,31 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-light bg-transparent">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                    <img src="../multimedia/imagenLogo.png" alt="logo" width="100" class="d-inline-block align-text-top"> <span id="izzi">Izzi</span>
-                </a>
-            </div>
-        </nav>
-    </header>
+    <!-- Navegador Bootstrap -->
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <class class="navbar-brand" href="#">
+                <a href="../index.html">
+                    <img src="../multimedia/imagenLogo.png" alt="" title="logo" width="100"><span id="izzi">Izzi</span>
+                </a>
+            </class>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="../páginas/registro.html">Registro</a>
+                    <a class="nav-link active" href="../páginas/empleos.html">Empleos</a>
+                    <a class="nav-link active" href="../páginas/novedades.html">Novedades</a>
+                    <a class="nav-link active" href="../páginas/sobreNosotros.html">Sobre Nosotros</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- MAIN -->
 
     <main>
         <div class="novedadesCont">
@@ -149,6 +164,7 @@
 
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-content d-flex flex-column flex-md-row">
 
@@ -195,7 +211,6 @@
             &copy;Izzi.com | por Felipe Pardo
         </div>
     </footer>
-
 
     <!-- Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

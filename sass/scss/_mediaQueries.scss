@@ -58,28 +58,6 @@ NOVEDADES
 
 /*
 
-REGISTRO
-
-*/
-
-@media (max-width: 1400px) {
-    .contenedor {
-        grid-template-areas: "head head" "aside aside" "form form";
-        .formRegistro {
-            margin: 30px auto;
-        }
-    }
-}
-
-@media (max-width: 940px) {
-    .contenedor {
-        grid-template-areas: "head head" "aside aside" "form form";
-    }
-}
-
-
-/*
-
 FOOTER
 
 */
